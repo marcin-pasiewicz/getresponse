@@ -1,12 +1,15 @@
 window.onload = function() {
-    'use strict';
 
     var btnMainNav = document.querySelector('.js-btn-nav');
     var mainNav = document.querySelector('.main-nav');
+    var spanBar = btnMainNav.children;
 
     btnMainNav.addEventListener('click', function(event) {
         event.preventDefault();
         mainNav.classList.toggle('show');
+        for (let i = 0; i <spanBar.length; i++) {
+          spanBar[i].classList.toggle('show');
+        }
     });
 
 

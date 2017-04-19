@@ -47,7 +47,6 @@
 
 .breadcrumbs {
   @include reset-list-style;
-  width: 226px;
   border-top: 2px solid #dbdbdb;
   margin-top: 1.6rem;
   margin-left: auto;
@@ -73,10 +72,10 @@
       display: block;
       width: 6px;
       height: 6px;
-      border-radius: 5px;
+      border-radius: 50%;
       background-color: #dbdbdb;
       border: 2px solid #dbdbdb;
-      top: -5px;
+      top: -6px;
       left: 0;
     }
 
@@ -96,7 +95,6 @@
 }
 
 .training-proteins {
-
   .title {
     margin-left: 10px;
   }
@@ -183,7 +181,6 @@
   flex-wrap: wrap;
   margin-top: 20px;
 
-  /* ===================== CELL =================== */
   .cell {
     position: relative;
     padding: .8rem;
@@ -421,4 +418,3 @@
     }
   }
 }
-
