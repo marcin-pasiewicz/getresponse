@@ -7,29 +7,240 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="topnav" id="myTopnav">
-                <a class="center" href="#">DASHBOARD</a>
-                <a class="center" href="#">RECIPES</a>
-                <a class="center" href="#">CHALLENGE</a>
-                <a class="right" href="#"><img src="images/olivia.png"/><span>Olivia Wilde<img src="images/chevron-up.png"/></span></a>
-                <a class="icon" onclick="onMenuOpen()"><div id="nav-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div></a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="selectors">
-            <div class="process">
-                <p>YOUR 12 WEEK PROCESS</p>
+<header class="site-header">
+    <div class="container">
+        <button class="btn-nav js-btn-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
+        <nav class="main-nav">
+            <ul>
+                <li class="active"><a href="#">Dashboard</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Challange</a></li>
+            </ul>
+        </nav>
+
+        <button class="user">
+            <img src="images/olivia.png" alt="Olivia Wilde" class="user-avatar"/>
+            <span class="user-name">Olivia Wilde</span>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+    </div>
+</header>
+<!-- main -->
+<main>
+
+    <div class="training-header container">
+        <!-- progress -->
+        <div class="training-breadcrumbs">
+            <h3 class="title">Your 12 week progress</h3>
+            <ul class="breadcrumbs">
+                <li class="ok">1</li>
+                <li class="ok">2</li>
+                <li class="ok">3</li>
+                <li class="ok">4</li>
+                <li class="ok">5</li>
+                <li class="ok">6</li>
+                <li class="active">7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+            </ul>
+        </div>
+
+        <ul class="training-slider week">
+            <li><a href="#" class="btn-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+            <li class="active">Week <span class="counter"></span></li>
+            <li><a href="#" class="btn-next"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+        </ul>
+
+        <div class="training-proteins">
+            <h3 class="title">Select Your protein options</h3>
+            <ul class="list-proteins">
+                <li><a href="#"><img src="images/icon-broccoli-green.svg" alt="broccoli"/></a></li>
+                <li><a href="#"><img src="images/icon-cheese-green.svg" alt="cheese"/></a></li>
+                <li><a href="#"><img src="images/icon-meat-green.svg" alt="meat"/></a></li>
+                <li><a href="#"><img src="images/icon-fish-grey.svg" alt="fish"/></a></li>
+                <li><a href="#"><img src="images/icon-chicken-grey.svg" alt="chicken"/></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="training container">
+        <div class="row-hours">
+            <div class="cell"></div>
+            <div class="cell"><b>6:00</b> AM</div>
+            <div class="cell"><b>9:00</b> AM</div>
+            <div class="cell"><b>12:00</b> PM</div>
+            <div class="cell"><b>3:00</b> PM</div>
+            <div class="cell"><b>6:00</b> PM</div>
+            <div class="cell"></div>
+            <div class="cell">Workout <i class="fa fa-caret-right" aria-hidden="true"></i></div>
+        </div>
+
+        <div class="row-day">
+            <div class="cell">Day 64</div>
+            <div class="cell">
+                <span class="cell-txt">Bod•ē Shake</span>
+                <img src="images/check.svg" alt="check" width="16" class="check"/>
+                <img src="images/bode-shake.png" alt="Bod•ē Shake" class="bode-shake"/>
             </div>
-        </section>
-    </main>
+            <div class="cell">
+                <span class="cell-txt">Ham and Swiss Roll Ups</span>
+                <img src="images/check.svg" alt="check" width="16" class="check"/>
+            </div>
+            <div class="cell">
+                <span class="cell-txt">Turkey Melt</span>
+                <img src="images/check.svg" alt="check" width="16" class="check"/>
+            </div>
+            <div class="cell">
+                <span class="cell-txt">Bod•ē Burn with Mozzarella and Tomato Slices</span>
+                <img src="images/check.svg" alt="check" width="16" class="check"/>
+            </div>
+            <div class="cell">
+                <span class="cell-txt">Turkey Melt</span>
+            </div>
+            <div class="cell">low-carb</div>
+            <div class="cell">
+                <img src="images/weight-bar-orange.svg" alt="weight-bar" width="28" class="weight-bar orange"/>
+                <img src="images/icon-check-orange.svg" alt="check" width="15" class="sport-check"/>
+            </div>
+        </div>
+
+        <div class="row-day active">
+            <div class="cell">Day 65</div>
+            <div class="cell">
+                <span class="cell-txt">Bod•ē Shake</span>
+                <img src="images/bode-shake-active.png" alt="Bod•ē Shake" class="bode-shake"/>
+            </div>
+            <div class="cell"><span class="cell-txt">Ham and Swiss Roll Ups</span></div>
+            <div class="cell">
+                <span class="cell-txt">Turkey Melt</span>
+            </div>
+            <div class="cell"><span class="cell-txt">Bod•ē Burn with Mozzarella and Tomato Slices</span></div>
+            <div class="cell"><span class="cell-txt">Turkey Melt</span></div>
+            <div class="cell">low-carb</div>
+            <div class="cell">
+                <img src="images/weight-bar-orange.svg" alt="weight-bar" width="28" class="weight-bar orange"/>
+                <img src="images/icon-check-orange.svg" alt="check" width="15" class="sport-check"/>
+            </div>
+        </div>
+
+        <div class="row-day">
+            <div class="cell">Day 66</div>
+            <div class="cell">
+                <span class="cell-txt">Bod•ē Shake</span>
+                <img src="images/bode-shake.png" alt="Bod•ē Shake" class="bode-shake"/>
+            </div>
+            <div class="cell"><span class="cell-txt">Grilled Steak (HC)</span></div>
+            <div class="cell">
+                <span class="cell-txt">Bod•ē Shake</span>
+                <img src="images/bode-shake.png" alt="Bod•ē Shake" class="bode-shake"/>
+            </div>
+            <div class="cell"><span class="cell-txt">Bod•ē Burn and Whole-Wheat English Muffin with Butter Spray</span>
+            </div>
+            <div class="cell"><span class="cell-txt">Garlic Lime Chicken (HC)</span></div>
+            <div class="cell">high-carb</div>
+            <div class="cell">
+                <img src="images/weight-bar-grey.svg" alt="weight-bar" width="28" class="weight-bar"/>
+            </div>
+        </div>
+
+        <div class="row-day">
+            <div class="cell">Day 67</div>
+            <div class="cell">
+                <span class="cell-txt">Bod•ē Shake</span>
+                <img src="images/bode-shake.png" alt="Bod•ē Shake" class="bode-shake"/>
+            </div>
+            <div class="cell"><span class="cell-txt">Ham and Swiss Roll Ups</span></div>
+            <div class="cell"><span class="cell-txt">Turkey Melt</span></div>
+            <div class="cell"><span class="cell-txt">Bod•ē Burn with Mozzarella and Tomato Slices</span></div>
+            <div class="cell"><span class="cell-txt">Turkey Melt</span></div>
+            <div class="cell">high-carb</div>
+            <div class="cell">
+                <img src="images/weight-bar-grey.svg" alt="weight-bar" width="28" class="weight-bar"/>
+            </div>
+        </div>
+
+        <div class="row-day">
+            <div class="cell">Day 68</div>
+            <div class="cell">
+                <span class="cell-txt">Bod•ē Shake</span>
+                <img src="images/bode-shake.png" alt="Bod•ē Shake" class="bode-shake"/>
+            </div>
+            <div class="cell"><span class="cell-txt">Ham and Swiss Roll Ups</span></div>
+            <div class="cell">
+                <span class="cell-txt">Bod•ē Shake</span>
+                <img src="images/bode-shake.png" alt="Bod•ē Shake" class="bode-shake"/>
+            </div>
+            <div class="cell"><span class="cell-txt">Bod•ē Burn with Mozzarella and Tomato Slices</span></div>
+            <div class="cell"><span class="cell-txt">Turkey Melt</span></div>
+            <div class="cell">high-carb</div>
+            <div class="cell">
+                <img src="images/weight-bar-grey.svg" alt="weight-bar" width="28" class="weight-bar"/>
+            </div>
+        </div>
+
+        <div class="row-day">
+            <div class="cell">Day 69</div>
+            <div class="cell">
+                <span class="cell-txt">Bod•ē Shake</span>
+                <img src="images/bode-shake.png" alt="Bod•ē Shake" class="bode-shake"/>
+            </div>
+            <div class="cell"><span class="cell-txt">Grilled Steak (HC)</span></div>
+            <div class="cell">
+                <span class="cell-txt">Bod•ē Shake</span>
+                <img src="images/bode-shake.png" alt="Bod•ē Shake" class="bode-shake"/>
+            </div>
+            <div class="cell"><span class="cell-txt">Bod•ē Burn and Whole-Wheat English Muffin with Butter Spray</span>
+            </div>
+            <div class="cell"><span class="cell-txt">Garlic Lime Chicken (HC)</span></div>
+            <div class="cell">high-carb</div>
+            <div class="cell">
+                <img src="images/weight-bar-grey.svg" alt="weight-bar" width="28" class="weight-bar"/>
+            </div>
+        </div>
+
+        <div class="row-day">
+            <div class="cell">Day 70</div>
+            <div class="cell">
+                <p class="text"><img src="images/icon-smile-grey.svg" alt="smile" width="45"/> Guilt-Free Day</p>
+            </div>
+            <div class="cell">
+                <a href="#" class="print"><img src="images/icon-printer-grey.svg" alt="printer" width="33"/> Print</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- footer -->
+<footer class="site-footer container">
+    <article class="box-info">
+        <h2 class="title">Running out of products?</h2>
+        <p class="content">Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.</p>
+        <a href="#" class="link">Buy now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </article>
+
+    <article class="box-info">
+        <h2 class="title">Bod•ē Trainer in your pocket</h2>
+        <p class="content">Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.</p>
+        <a href="#" class="link"><i class="fa fa-apple" aria-hidden="true"></i> iOS <i class="fa fa-angle-right"
+                                                                                       aria-hidden="true"></i></a>
+        <a href="#" class="link"><i class="fa fa-android" aria-hidden="true"></i> Android <i class="fa fa-angle-right"
+                                                                                             aria-hidden="true"></i></a>
+    </article>
+
+    <article class="box-info">
+        <h2 class="title">Frequently Asked Questions</h2>
+        <p class="content">Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.</p>
+        <a href="#" class="link">Read FAQs <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </article>
+</footer>
 </body>
 <script src="js/script.js" type="text/javascript"></script>
 </html>

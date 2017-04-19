@@ -1,0 +1,30 @@
+$text-light: "HelveticaNeueLT Std Lt", Helvetica, Arial, sans-serif;
+$text-regular: "HelveticaNeueLT Std", Helvetica, Arial, sans-serif;
+$text-medium: "HelveticaNeueLT Std Med", Helvetica, Arial, sans-serif;
+html {
+  font-size: 10px;
+
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $text-regular;
+  font-size: 1.3rem;
+  background-color: $bg-color;
+  margin: 0;
+}
+
+main {
+  padding: 5px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}

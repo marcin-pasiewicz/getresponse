@@ -1,0 +1,194 @@
+.site-header {
+  width: 100%;
+  min-height: 79px;
+  background-color: $white;
+  border-bottom: 1px solid $line-grey;
+  @include box-shadow(0, 1px, 1px, rgba($black, 0.13));
+
+  .btn-nav {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    margin-top: 1.45rem;
+    background-color: $active-color;
+    cursor: pointer;
+    outline: none;
+    margin-left: 1.5rem;
+    @include transition(background-color .5s);
+
+    &:hover {
+      background-color: $hover-color;
+    }
+
+    span {
+      display: block;
+      width: 70%;
+      height: 2px;
+      background-color: $white;
+      margin: 8px auto;
+    }
+  }
+
+  .user {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: $text-header;
+    outline: none;
+    @include transition(color .1s);
+
+    .user-name,
+    .user-avatar,
+    .fa-angle-down {
+      vertical-align: middle;
+    }
+
+    .user-avatar {
+      display: inline-block;
+      width: 3.4rem;
+      height: 3.4rem;
+      border-radius: 1.7rem;
+      @include box-shadow(0, 1px, 1px, rgba($black, 0.32));
+      @include transition(box-shadow .1s);
+    }
+
+    .user-name {
+      font-size: 1.5rem;
+      margin: 0;
+      margin-left: .5rem;
+      margin-right: .8rem;
+      display: inline-block;
+      font-weight: normal;
+    }
+
+    &:hover {
+      color: $active-color;
+
+      .user-avatar {
+        @include box-shadow(0, 1px, 1px, rgba($active-color, 0.72));
+      }
+    }
+  }
+
+  @media all and (min-width: 769px) {
+    height: 79px;
+
+    .btn-nav {
+      display: none;
+    }
+
+    .user {
+      right: 0;
+    }
+  }
+}
+
+.main-nav {
+  display: none;
+  width: 100%;
+  position: relative;
+  margin-top: 2rem;
+
+  &.show {
+    display: block;
+    @include transition(height .1s);
+  }
+
+  ul {
+    @include reset-list-style();
+
+    li {
+      display: block;
+      text-align: center;
+      border-top: 1px solid $line-grey;
+
+      a {
+        display: block;
+        font-size: 1.4rem;
+        color: $text-header;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 0 1rem;
+        @include transition(background-color .1s, color .1s);
+
+        &::after {
+          content: '';
+          display: block;
+          width: 2.5rem;
+          height: .2rem;
+          background-color: transparent;
+          margin: 5px auto 0;
+          @include transition(background-color .1s);
+        }
+
+        &:hover {
+          background-color: $active-color;
+          color: $white;
+
+          &::after {
+            background-color: $white;
+          }
+        }
+      }
+
+      &.active {
+        a {
+          cursor: default;
+          background-color: $active-color;
+          color: $white;
+
+          &::after {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: 769px) {
+    display: block;
+    margin-top: 0;
+
+    ul {
+      border-left: 1px solid $nav-left-line;
+      margin-left: 11.8rem;
+
+      li {
+        display: inline-block;
+        border-top: 0;
+
+        a {
+          height: 7.9rem;
+          margin-left: 3rem;
+          padding-top: 3rem;
+
+          &.active,
+          &:hover {
+            background-color: transparent;
+            color: $active-color;
+
+            &::after {
+              background-color: rgba($active-color, 0.44);
+            }
+          }
+        }
+
+        &.active {
+          a {
+            cursor: default;
+            background-color: transparent;
+            color: $active-color;
+
+            &::after {
+              background-color: rgba($active-color, 0.44);
+            }
+          }
+        }
+      }
+    }
+  }
+}
