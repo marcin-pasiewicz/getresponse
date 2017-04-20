@@ -18,9 +18,16 @@
   "homepage": "https://github.com/marcin-pasiewicz/getresponse#readme",
   "devDependencies": {
     "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^1.2.2",
+    "useref": "^1.2.0"
   },
   "dependencies": {
     "gulp": "^3.9.1"
