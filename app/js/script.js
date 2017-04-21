@@ -7,7 +7,7 @@ window.onload = function() {
     btnMainNav.addEventListener('click', function(event) {
         event.preventDefault();
         mainNav.classList.toggle('show');
-        for (let i = 0; i <spanBar.length; i++) {
+        for (var i = 0; i <spanBar.length; i++) {
           spanBar[i].classList.toggle('show');
         }
     });
