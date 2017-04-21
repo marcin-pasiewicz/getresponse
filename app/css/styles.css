@@ -2468,10 +2468,10 @@ main {
     cursor: pointer;
     color: #7C7C7C;
     outline: none;
-    -moz-transition: color 0.1s;
-    -o-transition: color 0.1s;
-    -webkit-transition: color 0.1s;
-    transition: color 0.1s; }
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s; }
     .site-header .user .user-name,
     .site-header .user .user-avatar,
     .site-header .user .fa-angle-down {
@@ -2483,11 +2483,7 @@ main {
       border-radius: 1.7rem;
       -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.32);
       -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.32);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.32);
-      -moz-transition: box-shadow 0.1s;
-      -o-transition: box-shadow 0.1s;
-      -webkit-transition: box-shadow 0.1s;
-      transition: box-shadow 0.1s; }
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.32); }
     .site-header .user .user-name {
       font-size: 1.5rem;
       margin: 0;
@@ -2532,10 +2528,10 @@ main {
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 0 1rem;
-        -moz-transition: background-color 0.1s, color 0.1s;
-        -o-transition: background-color 0.1s, color 0.1s;
-        -webkit-transition: background-color 0.1s, color 0.1s;
-        transition: background-color 0.1s, color 0.1s; }
+        -moz-transition: background-color 0.5s, color 0.5s;
+        -o-transition: background-color 0.5s, color 0.5s;
+        -webkit-transition: background-color 0.5s, color 0.5s;
+        transition: background-color 0.5s, color 0.5s; }
         .main-nav ul li a::after {
           content: '';
           display: block;
@@ -2543,10 +2539,10 @@ main {
           height: .2rem;
           background-color: transparent;
           margin: 5px auto 0;
-          -moz-transition: background-color 0.1s;
-          -o-transition: background-color 0.1s;
-          -webkit-transition: background-color 0.1s;
-          transition: background-color 0.1s; }
+          -moz-transition: background-color 0.5s;
+          -o-transition: background-color 0.5s;
+          -webkit-transition: background-color 0.5s;
+          transition: background-color 0.5s; }
         .main-nav ul li a:hover {
           background-color: #fe8130;
           color: #FFFFFF; }
